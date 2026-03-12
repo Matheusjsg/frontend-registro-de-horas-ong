@@ -49,6 +49,18 @@ const handleChange = (e) => {
 const handleSubmit = (e) => {
     e.preventDefault()
 
+      if (
+    !atividade.voluntarioId ||
+    !atividade.data ||
+    !atividade.tempoMinutos ||
+    !atividade.descricao
+  ) 
+  
+  {
+    alert("Preencha todos os campos obrigatórios")
+    return
+  }
+
     onSubmit(atividade)
 
     alert("Atividade registrada com sucesso! 🎉")
