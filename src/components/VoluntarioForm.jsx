@@ -2,6 +2,8 @@ import "../styles/form.css"
 
 const VoluntarioForm = () => {
 
+  
+
   return (
     <div className="card">
 
