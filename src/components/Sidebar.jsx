@@ -1,16 +1,30 @@
 import "../styles/sidebar.css"
+import { useState } from "react"
 import { LayoutDashboard, ClipboardList, Users, Building } from "lucide-react";
+import logo from "../assets/logo.png"
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
 
+  const [open, setOpen] = useState(false)
+
+
+
   return (
 
-   
-   
-   <div className="sidebar">
 
-      <img src= '/src/assets/logo-abcaa-D1fWvvPI.png' alt="Logo da ONG" className="logo"/>
+    <>
+      <div className="hamburger" onClick={() => setOpen(!open)}>
+        ☰
+      </div>
+           
+   <div className={open ? "sidebar active" : "sidebar"}>
+        
+      
+
+            {/* SIDEBAR */}
+        
+      <img src={logo} alt="Logo da ONG" className="logo"/>
 
       <h2>Voluntariado</h2>
 
@@ -35,7 +49,7 @@ const Sidebar = () => {
       </nav>
 
     </div>
-
+</>
   )
 
 }
