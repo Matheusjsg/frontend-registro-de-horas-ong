@@ -5,8 +5,8 @@ import { RouterProvider } from 'react-router-dom'
 import CadastroAtividade from './pages/CadastroAtividade.jsx'
 import Voluntario from "./pages/Voluntarios.jsx"
 import Setores from "./pages/Setores.jsx"
-
 import './index.css'
+
 
 const router = createBrowserRouter([
   { path: "/", element: <CadastroAtividade/>},
