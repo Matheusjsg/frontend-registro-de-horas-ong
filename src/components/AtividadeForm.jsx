@@ -5,12 +5,12 @@ import "../styles/form.css"
 
 const AtividadeForm = ({onSubmit, novaAtividade}) => {
 
-const [atividade, setAtividade] = useState({
+const [atividade, setAtividade] = useState([{
   data: "",
   tempoMinutos: "",
   descricao: "",
   voluntarioId: ""
-})
+}])
 const [voluntario, setVoluntario] = useState([])
 
 
@@ -76,9 +76,7 @@ const handleSubmit = (e) => {
 
  
   return (
-
     
-
     <div className="card">
 
       <h2>Registrar Atividade</h2>
