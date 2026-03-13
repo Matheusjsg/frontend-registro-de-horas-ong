@@ -9,6 +9,7 @@ import Setores from "./pages/Setores.jsx"
 import './index.css'
 
 const router = createBrowserRouter([
+  { path: "", element: <CadastroAtividade/>},
   { path: "/registrar-atividade", element: <CadastroAtividade/>},
   { path: "/voluntarios", element: <Voluntario/>},
   { path: "/setores", element: <Setores/>},
