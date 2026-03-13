@@ -74,30 +74,36 @@ body{
 /* BOTÃO HAMBURGER */
 .hamburger{
   display:none;
-  font-size:20px;
-  padding:10px 15px;
+  font-size:28px;
+  padding:10px;
   cursor:pointer;
-  position:fixed;
-  top:7px;
-  left:10px;
-  background:#111827;
-  color:white;
-  border-radius:8px;
-  z-index:1000;
 }
 
 /* MOBILE */
 @media (max-width:900px){
 
   .hamburger{
-    display:flex;
-    background:#111827;
-    color:white;
+  display:none;
+  font-size:28px;
+  padding:5px 5px;
+  cursor:pointer;
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  background:#d107af77;
+  color:rgb(255, 255, 255);
+  border-radius:5px;
+  z-index:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
   }
 
-  .sidebar{
+   .sidebar{
     left:-270px;
     z-index:999;
+    position:fixed;
   }
 
   .sidebar.active{
