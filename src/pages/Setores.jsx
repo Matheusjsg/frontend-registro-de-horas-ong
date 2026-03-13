@@ -1,6 +1,7 @@
 import SetorForm from "../components/SetorForm"
 import Footer from "../components/Footer"
 import Sidebar from "../components/Sidebar"
+import { criarSetor } from "../service/api"
 
 const Setores = () => {
 

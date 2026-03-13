@@ -3,7 +3,9 @@ import "../styles/form.css"
 
 const SetorForm = ({onSubmit, novoSetor}) => {
 
-  const [setor, setSetor] = useState([])
+  const [setor, setSetor] = useState({
+    nome: ""
+  })
 
 useEffect(() => {
   if (novoSetor){
@@ -23,13 +25,9 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   
-  console.log(setor, "enviado")
-  
   e.preventDefault()
 
-      if (
-    !setor.nome
-  ) 
+      if (!setor.nome) 
   
   {
     alert("Preencha todos os campos obrigatórios")
@@ -40,7 +38,7 @@ const handleSubmit = (e) => {
 
     alert("Atividade registrada com sucesso! 🎉")
 
-     setAtividade({
+     setSetor({
     nome: ""
   })
   
