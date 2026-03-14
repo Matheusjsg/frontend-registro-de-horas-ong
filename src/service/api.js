@@ -1,6 +1,6 @@
 ////////////////////////////////  ATIVIDADE  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-const atividadeAPI = "https://controle-atividades-voluntariado.onrender.com/atividades"
+const atividadeAPI = "https://atividades-voluntariado.onrender.com/atividades"
 
 export const fetchAtividades = async () => {
 
@@ -24,7 +24,7 @@ export const registarAtividade = async (atividade) => {
 
 ///////////////////////////////   SETORES \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
    
-const setoresAPI = "https://controle-atividades-voluntariado.onrender.com/setores"
+const setoresAPI = "https://atividades-voluntariado.onrender.com/setores"
 
 export const fetchSetores = async () => {
 
@@ -50,7 +50,7 @@ export const criarSetor = async (setor) => {
 ////////////////////////////////////// VOLUNTÁRIO \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
-const voluntarioAPI = "https://controle-atividades-voluntariado.onrender.com/voluntarios"
+const voluntarioAPI = "https://atividades-voluntariado.onrender.com/voluntarios"
 
 export const fetchVoluntarios = async() => {
 
