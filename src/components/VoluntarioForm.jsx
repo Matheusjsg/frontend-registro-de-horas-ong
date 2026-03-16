@@ -9,7 +9,7 @@ const VoluntarioForm = ({onSubmit, novoVoluntario}) => {
     nome: "",
     email: "",
     setorId: "",
-    tipoUsuario: ""
+    tipoUsuario: "VOLUNTARIO"
 
   })
 
